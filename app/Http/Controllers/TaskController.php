@@ -60,21 +60,21 @@ class TaskController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request,Task $task)
-    {
-          $validated = $request->validate([
-            'title'=>'required|string|max:255',
-            'description'=>'nullable|string',
-            'due_date'=>'nullable|date',
-            'list_id'=>'required|exists:lists,id',
-            'is_completed'=>'boolean',
+   public function store(Request $request)
+{
+    $validated = $request->validate([
+        'title' => 'required|string|max:255',
+        'description' => 'nullable|string',
+        'due_date' => 'nullable|date',
+        'list_id' => 'required|exists:lists,id',
+        'is_completed' => 'boolean',
+    ]);
 
+    Task::create($validated);
 
+    return redirect()->route('tasks.index')->with('success', 'Task Created Successfully');
+}
 
-        ]);
-        $task->update($validated);
-        return redirect()->route('tasks.index')->with('success','Task Updated SuccessFully');
-    }
 
     /**
      * Display the specified resource.
@@ -95,21 +95,21 @@ class TaskController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
-    {
-          $validated = $request->validate([
-            'title'=>'required|string|max:255',
-            'description'=>'nullable|string',
-            'due_date'=>'nullable|date',
-            'list_id'=>'required|exists:lists,id',
-            'is_completed'=>'boolean',
+   public function update(Request $request, Task $task)
+{
+    $validated = $request->validate([
+        'title' => 'required|string|max:255',
+        'description' => 'nullable|string',
+        'due_date' => 'nullable|date',
+        'list_id' => 'required|exists:lists,id',
+        'is_completed' => 'boolean',
+    ]);
 
+    $task->update($validated);
 
+    return redirect()->route('tasks.index')->with('success', 'Task Updated Successfully');
+}
 
-        ]);
-        Task::create($validated);
-        return redirect()->route('tasks.index')->with('success','Task Created SuccessFully');
-    }
 
     /**
      * Remove the specified resource from storage.

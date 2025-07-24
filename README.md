@@ -28,13 +28,16 @@ A clean, practical **Task Manager** application built using:
 ## 📸 Screenshots
 
 ### 🖥️ Dashboard Overview
-![Dashboard](public/screenshots/dashboard.png)
+![Dashboard](public/screenshots/dashboard.png.png)
 
 ### 🗂️ List View
-![List View](public/screenshots/list-view.png)
+![List View](public/screenshots/list-view.png.png)
 
 ### ✅ Task View
-![Task View](public/screenshots/task-view.png)
+![Task View](public/screenshots/task-view.png.png)
+
+
+
 
 ---
 

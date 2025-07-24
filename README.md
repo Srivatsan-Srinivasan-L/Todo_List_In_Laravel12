@@ -48,15 +48,15 @@ A clean, practical **Task Manager** application built using:
 git clone https://github.com/YOUR-USERNAME/Todo_List_In_Laravel12.git
 cd Todo_List_In_Laravel12
 
----
 
-2️⃣ **Install PHP dependencies:**
 
-```bash
+2️⃣ Install PHP dependencies:
+
+
 composer install
 
 3️⃣ Install Node dependencies:
-```bash
+
 npm install
 
 ---

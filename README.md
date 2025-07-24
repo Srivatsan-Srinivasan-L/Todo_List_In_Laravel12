@@ -27,10 +27,14 @@ A clean, practical **Task Manager** application built using:
 
 ## 📸 Screenshots
 
-> Add screenshots here after your next push:
-- Dashboard overview
-- List view
-- Task view
+### 🖥️ Dashboard Overview
+![Dashboard](public/screenshots/dashboard.png)
+
+### 🗂️ List View
+![List View](public/screenshots/list-view.png)
+
+### ✅ Task View
+![Task View](public/screenshots/task-view.png)
 
 ---
 
